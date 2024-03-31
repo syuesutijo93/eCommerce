@@ -1,0 +1,19 @@
+<products>
+  <product>
+    <id>1</id>
+    <name>Product 1</name>
+    <price>10.00</price>
+    <image>https://via.placeholder.com/300x300?text=Product+1</image>
+    <description>This is a description of Product 1</description>
+  </product>
+  <product>
+    <id>2</id>
+    <name>Product 2</name>
+    <price>20.00</price>
+    <image>https://via.placeholder.com/300x300?text=Product+2</image>
+    <description>This is a description of Product 2</description>
+  </product>
+  <product>
+    <id>3</id>
+    <name>Product 3</name>
+    <price>30
