@@ -68,3 +68,15 @@ function updateCart() {
   var totalPrice = 0;
 
   for (
+
+    var i = 0; i < cartItems.length; i++) {
+    var item = cartItems[i];
+    var listItem = document.createElement("li");
+    listItem.textContent = `${item.name} - $${item.price}`;
+    cartItemsList.appendChild(listItem);
+    totalPrice += item.price;
+  }
+
+  document.getElementById("cart-total").textContent = totalPrice.toFixed(2);
+  document.getElementById("cart-count").textContent = cartItems.length;
+}
