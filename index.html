@@ -8,17 +8,19 @@
 </head>
 <body>
   <header>
-    <h1>eStore</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#" id="view-cart">Cart (0)</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>eStore</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#" id="view-cart">Cart <span id="cart-count">(0)</span></a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   
-  <main id="product-list">
+  <main class="container" id="product-list">
     <!-- Product items will be dynamically inserted here -->
   </main>
 
@@ -27,9 +29,13 @@
       <span class="close">&times;</span>
       <h2>Your Cart</h2>
       <ul id="cart-items"></ul>
+      <div class="total">
+        <strong>Total:</strong> $<span id="cart-total">0.00</span>
+      </div>
     </div>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
