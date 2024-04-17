@@ -40,12 +40,27 @@ function parseXML(xml) {
       <div><img src="${productImage}" alt="${productName}"></div>
       <p class="name">${productName}</p>
       <p class="price">RM${productPrice}</p>
-      <input type="button" name="button" onclick="addToCart(10)" value="Add to Cart" class="AddtoCartButton">
+      <input type="button" name="button" onclick="addToCart(10)" value="Add to Cart" id="addToCartButton">
     `;
     productList.appendChild(productItem);
   }
   }
+const button = document.querySelector('#addToCartButton');
 
+button.addEventListener('click', () => {
+  // Add the item to the cart here
+  addItemToCart();
+});
+function addItemToCart() {
+  const item = {
+    name: 'Example Item',
+    price: 10.00,
+    quantity: 1
+  };
+
+  // Update the cart with the new item
+  updateCart(item);
+}
 // Click down content
 document.addEventListener("DOMContentLoaded", function() {
     const clickableDiv = document.getElementById("myDiv");
