@@ -12,7 +12,7 @@
   <link rel="icon" type="image/x-icon" href="img/favicon.svg">
 </head>
 
-<body>
+<body class="">
   <div id="mainWrapper">
     <header>
       <!-- This is the header content. It contains Logo and links -->
@@ -63,29 +63,26 @@
             </ul>
           </nav>
         </div>
-
-
-
       </div>
-      <div class="mainContent">
-        <div class="productRow"></div>
-      </div>
+      <section class="mainContent">
+        <!-- confirmation -->
+        <div class="container">
+          <h1>Payment Confirmation</h1>
+          <p>Your payment was successful! Thank you for your purchase.</p>
 
-      <!--add to cart item and checkout-->
-      <section class="cart">
-        <h2>Shopping Cart</h2>
-        <div class="cartItems"></div>
-        <h3>Total: <span class="totalPrice">RM 0</span></h3>
-        <button class="checkoutButton" onclick="checkout()">GO TO CHECKOUT</button>
+          <p id="redirect-message">Redirecting to home page...</p>
+
+        </div>
+
       </section>
 
-
-      <!--TOK LOGIN SECTION -->
       <div id="id01" class="modal">
+
         <form class="modal-content animate" action="/action_page.php" method="post">
           <div class="imgcontainer">
             <span onclick="document.getElementById('id01').style.display='none'" class="close"
               title="Close Modal">&times;</span>
+            <img src="img_avatar2.png" alt="Avatar" class="avatar">
           </div>
 
           <div class="container">
@@ -108,30 +105,30 @@
           </div>
         </form>
       </div>
+
+
+      <footer>
+        <!-- This is the footer with default 3 divs -->
+        <div>
+          <h2>Sailor Moon Store.Co</h2>
+          <p>Registration No: 20240416 (423330-U)<br>
+            Unit 17-10, Level 8, Menara Kenyalang
+            94300 Kota Samarahan, Sarawak</p>
+        </div>
+        <div>
+          <p>Online Customer Service Operation Hours:
+            <br>Monday to Friday, 8:30AM - 5:30PM.
+          </p>
+        </div>
+        <div class="footerlinks">
+          <p><a href="faq.html" title="FAQs">FAQs</a></p>
+          <p><a href="privacy.html" title="Privacy Notice">Privacy Notice</a></p>
+          <p><a href="terms.html" title="Terms & Conditions">Terms & Conditions</a></p>
+        </div>
+      </footer>
     </div>
-    <!--PENUTUP LOGIN SECTION -->
-
-    <footer>
-      <!-- This is the footer with default 3 divs -->
-      <div>
-        <h2>SailorMoon Store.Co</h2>
-        <p>Registration No: 20240416 (423330-U)<br>
-          Unit 17-10, Level 8, Menara Kenyalang
-          94300 Kota Samarahan, Sarawak</p>
-      </div>
-      <div>
-        <p>Online Customer Service Operation Hours:
-          <br>Monday to Friday, 8:30AM - 5:30PM.
-        </p>
-      </div>
-      <div class="footerlinks">
-        <p><a href="faq.html" title="FAQs">FAQs</a></p>
-        <p><a href="privacy.html" title="Privacy Notice">Privacy Notice</a></p>
-        <p><a href="terms.html" title="Terms & Conditions">Terms & Conditions</a></p>
-      </div>
-    </footer>
-
     <script src="script.js"></script>
+    <script src="redirect.js"></script>
   </div>
 </body>
 
